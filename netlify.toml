@@ -1,0 +1,8 @@
+[build]
+  command = "docker build -t weather-app . && docker run -p 80:80 weather-app"
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
